@@ -1,0 +1,185 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  text-align: center;
+ 
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.dropzone {
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+.dropzone.dragover {
+  border-color: #000;
+}
+
+h1 {
+  color: #0073b1;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #0073b1;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #005582;
+}
+
+.cropper-container {
+  margin: 20px auto;
+}
+
+img {
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#image-preview {
+  border: 2px dashed #0073b1;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #333;
+  margin-top: 30px;
+}
+
+.uploaded-image {
+  height: auto;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.uploaded-image img {
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-top: -6rem;
+  margin-left: 1rem;
+  width: 200px;
+}
+
+.file-upload {
+  margin: 1rem;
+}
+
+.file-upload button {
+  background-color: #a9d0ee;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: #000;
+}
+
+.file-upload button:hover {
+  background-color: #00a6ff;
+  color: black;
+}
+
+.file-upload span {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.name {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.name h2 {
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #333;
+  margin-left: 2rem;
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+
+.user-info h5 {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.username, .role, .pronouns {
+  margin: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.text-dark {
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .App {
+    width: 95%;
+    height: auto;
+    padding: 20px;
+  }
+  .user-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .username, .role, .pronouns {
+    text-align: left;
+  }
+  .uploaded-image img {
+    margin-top: -3rem;
+    margin-left: 2rem;
+    width: 100%;
+  }
+  .file-upload button {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+.banner-img {
+  max-width: 700px;
+  margin: 0;
+}
